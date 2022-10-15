@@ -1,0 +1,9 @@
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Main.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/list_install_components.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/install.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/install/local.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/install/strip.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Main_autogen_timestamp_deps.dir
+C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Main_autogen.dir
