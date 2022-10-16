@@ -7,16 +7,16 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class App; }
 QT_END_NAMESPACE
 
-class App : public QMainWindow
-{
-    Q_OBJECT
+class App : public QMainWindow {
+Q_OBJECT
 
 public:
     App(QWidget *parent = nullptr);
     ~App();
+
 private slots:
-    void onTextChanged();
-//    void onCursorPositionChanged();
+    void onTextChanged_Enc();
+
 
 private:
     Ui::App *ui;
