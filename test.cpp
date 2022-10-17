@@ -32,9 +32,18 @@ string vigineer(string input, string key) {
     return output;
 }
 
+string atbash(string input) {
+    string output;
+    for (int i = 0;i < input.length(); i++){
+        output+= alph_en[alph_en.length()-alph_en.find(input[i])-1];
+    }
+    cout << input<<"\n";
+    return output;
+}
 
 int main() {
 //    cout << cesar("ABC",2);
-    cout << vigineer("fuck", "saqult");
+//    cout << vigineer("fuck", "saqult");
+//cout <<atbash("fuck");
     return 0;
 }
