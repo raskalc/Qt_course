@@ -22,7 +22,7 @@ set(PROJECT_SOURCES
         app.ui
         widget.cpp
         widget.cpp
-)
+        )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Qt

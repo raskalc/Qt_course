@@ -375,6 +375,19 @@ CMakeFiles/Qt.dir/app.cpp.obj: \
  C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QComboBox \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qcombobox.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.4.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.4.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.4.0/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlayout.h \
@@ -385,6 +398,8 @@ CMakeFiles/Qt.dir/app.cpp.obj: \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
  C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
  C:/Qt/6.4.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMenuBar \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmenubar.h \
@@ -392,13 +407,21 @@ CMakeFiles/Qt.dir/app.cpp.obj: \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpacerItem \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpinBox \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qspinbox.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTextEdit \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.4.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/Users/main/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
- C:/Users/main/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
- C:/Users/main/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
  C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.4.0/mingw_64/include/QtCore/qstring.h
+ C:/Qt/6.4.0/mingw_64/include/QtCore/qstring.h \
+ C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+ C:\Users\main\CLionProjects\Qt_course_dev\cipter.cpp \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h

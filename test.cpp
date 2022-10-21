@@ -7,8 +7,7 @@ using namespace std;
 string alph_en = "abcdefghijklmnopqrstuvwxyz";
 
 
-
-string cesar(string input, int offset) {
+[[maybe_unused]] string cesar(string input, int offset) {
     string output;
     for (int i = 0; i < input.length(); i++) {
         int num = (alph_en.find(input[i]) + offset);

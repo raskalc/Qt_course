@@ -696,6 +696,8 @@ C:/Users/main/CLionProjects/Qt_course_dev/widget.h
  mdp:C:/Users/main/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/main/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/x86_64-w64-mingw32/include/wctype.h
 C:/Users/main/CLionProjects/Qt_course_dev/Qt.cpp
+C:/Users/main/CLionProjects/Qt_course_dev/cipter.h.cpp
+C:/Users/main/CLionProjects/Qt_course_dev/cipter.cpp
 C:/Users/main/CLionProjects/Qt_course_dev/app.cpp
  uic:./ui_app.h
 C:/Users/main/CLionProjects/Qt_course_dev/widget.cpp
