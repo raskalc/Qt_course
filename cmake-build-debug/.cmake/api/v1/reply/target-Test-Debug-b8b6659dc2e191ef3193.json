@@ -47,14 +47,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug"
+					"path" : "C:/Users/main/CLionProjects/Qt_course/cmake-build-debug"
 				},
 				{
-					"path" : "C:/Users/main/CLionProjects/Qt_course_dev"
+					"path" : "C:/Users/main/CLionProjects/Qt_course"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug/Test_autogen/include"
+					"path" : "C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/Test_autogen/include"
 				}
 			],
 			"language" : "CXX",

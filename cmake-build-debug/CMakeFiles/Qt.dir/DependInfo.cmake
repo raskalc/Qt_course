@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/main/CLionProjects/Qt_course_dev/Qt.cpp" "CMakeFiles/Qt.dir/Qt.cpp.obj" "gcc" "CMakeFiles/Qt.dir/Qt.cpp.obj.d"
-  "C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug/Qt_autogen/mocs_compilation.cpp" "CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj.d"
-  "C:/Users/main/CLionProjects/Qt_course_dev/app.cpp" "CMakeFiles/Qt.dir/app.cpp.obj" "gcc" "CMakeFiles/Qt.dir/app.cpp.obj.d"
-  "C:/Users/main/CLionProjects/Qt_course_dev/widget.cpp" "CMakeFiles/Qt.dir/widget.cpp.obj" "gcc" "CMakeFiles/Qt.dir/widget.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/Qt.cpp" "CMakeFiles/Qt.dir/Qt.cpp.obj" "gcc" "CMakeFiles/Qt.dir/Qt.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/Qt_autogen/mocs_compilation.cpp" "CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/app.cpp" "CMakeFiles/Qt.dir/app.cpp.obj" "gcc" "CMakeFiles/Qt.dir/app.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/widget.cpp" "CMakeFiles/Qt.dir/widget.cpp.obj" "gcc" "CMakeFiles/Qt.dir/widget.cpp.obj.d"
   )
 
 # Targets to which this target links.

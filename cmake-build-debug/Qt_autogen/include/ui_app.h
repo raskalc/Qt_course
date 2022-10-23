@@ -41,6 +41,8 @@ public:
     QTextEdit *Encrypted;
     QTextEdit *Decrypted;
     QVBoxLayout *verticalLayout_3;
+    QPushButton *switch_mode;
+    QSpacerItem *verticalSpacer_4;
     QComboBox *Selected_method;
     QSpacerItem *verticalSpacer_2;
     QPushButton *Import_btn;
@@ -59,7 +61,7 @@ public:
     {
         if (App->objectName().isEmpty())
             App->setObjectName("App");
-        App->resize(829, 633);
+        App->resize(829, 652);
         MainWigdet = new QWidget(App);
         MainWigdet->setObjectName("MainWigdet");
         verticalLayout_5 = new QVBoxLayout(MainWigdet);
@@ -120,6 +122,15 @@ public:
         verticalLayout_3->setObjectName("verticalLayout_3");
         verticalLayout_3->setSizeConstraint(QLayout::SetMinimumSize);
         verticalLayout_3->setContentsMargins(0, -1, -1, -1);
+        switch_mode = new QPushButton(MainWigdet);
+        switch_mode->setObjectName("switch_mode");
+
+        verticalLayout_3->addWidget(switch_mode);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        verticalLayout_3->addItem(verticalSpacer_4);
+
         Selected_method = new QComboBox(MainWigdet);
         Selected_method->addItem(QString());
         Selected_method->addItem(QString());
@@ -212,6 +223,7 @@ public:
         App->setWindowTitle(QCoreApplication::translate("App", "App", nullptr));
         lbl1->setText(QCoreApplication::translate("App", "Encrypted", nullptr));
         lbl2->setText(QCoreApplication::translate("App", "Crypted", nullptr));
+        switch_mode->setText(QCoreApplication::translate("App", "Switch Mode", nullptr));
         Selected_method->setItemText(0, QCoreApplication::translate("App", "Vigenere", nullptr));
         Selected_method->setItemText(1, QCoreApplication::translate("App", "Atbash", nullptr));
         Selected_method->setItemText(2, QCoreApplication::translate("App", "Cesar", nullptr));

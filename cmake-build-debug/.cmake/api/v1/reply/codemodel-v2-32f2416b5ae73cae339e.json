@@ -46,7 +46,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Qt-Debug-262dba0fb67cd26ad4c2.json",
+					"jsonFile" : "target-Qt-Debug-d49996740b97958e9666.json",
 					"name" : "Qt",
 					"projectIndex" : 0
 				},
@@ -60,7 +60,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Test-Debug-134198b8547ffba59046.json",
+					"jsonFile" : "target-Test-Debug-b8b6659dc2e191ef3193.json",
 					"name" : "Test",
 					"projectIndex" : 0
 				},
@@ -77,8 +77,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug",
-		"source" : "C:/Users/main/CLionProjects/Qt_course_dev"
+		"build" : "C:/Users/main/CLionProjects/Qt_course/cmake-build-debug",
+		"source" : "C:/Users/main/CLionProjects/Qt_course"
 	},
 	"version" : 
 	{

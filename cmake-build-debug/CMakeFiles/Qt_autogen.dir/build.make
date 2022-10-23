@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\main\CLionProjects\Qt_course_dev
+CMAKE_SOURCE_DIR = C:\Users\main\CLionProjects\Qt_course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\main\CLionProjects\Qt_course\cmake-build-debug
 
 # Utility rule file for Qt_autogen.
 
@@ -66,8 +66,8 @@ include CMakeFiles/Qt_autogen.dir/compiler_depend.make
 include CMakeFiles/Qt_autogen.dir/progress.make
 
 CMakeFiles/Qt_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Qt"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E cmake_autogen C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug/CMakeFiles/Qt_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Qt"
+	"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_autogen C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Qt_autogen.dir/AutogenInfo.json Debug
 
 Qt_autogen: CMakeFiles/Qt_autogen
 Qt_autogen: CMakeFiles/Qt_autogen.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/Qt_autogen.dir/clean:
 .PHONY : CMakeFiles/Qt_autogen.dir/clean
 
 CMakeFiles/Qt_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\main\CLionProjects\Qt_course_dev C:\Users\main\CLionProjects\Qt_course_dev C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles\Qt_autogen.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\main\CLionProjects\Qt_course C:\Users\main\CLionProjects\Qt_course C:\Users\main\CLionProjects\Qt_course\cmake-build-debug C:\Users\main\CLionProjects\Qt_course\cmake-build-debug C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles\Qt_autogen.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Qt_autogen.dir/depend
 

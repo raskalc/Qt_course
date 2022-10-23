@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/main/CLionProjects/Qt_course_dev/cmake-build-debug/Test_autogen/mocs_compilation.cpp" "CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj.d"
-  "C:/Users/main/CLionProjects/Qt_course_dev/test.cpp" "CMakeFiles/Test.dir/test.cpp.obj" "gcc" "CMakeFiles/Test.dir/test.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/Test_autogen/mocs_compilation.cpp" "CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/main/CLionProjects/Qt_course/test.cpp" "CMakeFiles/Test.dir/test.cpp.obj" "gcc" "CMakeFiles/Test.dir/test.cpp.obj.d"
   )
 
 # Targets to which this target links.

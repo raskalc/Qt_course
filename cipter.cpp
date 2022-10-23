@@ -5,7 +5,7 @@ using namespace std;
 
 string alph_en = "abcdefghijklmnopqrstuvwxyz";
 
-string cesar(string input, int offset) {
+string cesar_crypt(string input, int offset) {
     string output;
     for (int i = 0; i < input.length(); i++) {
         int num = (alph_en.find(input[i]) + offset);
@@ -15,7 +15,7 @@ string cesar(string input, int offset) {
     return output;
 }
 
-string vigineer(string input, string key) {
+string vigineer_crypt(string input, string key) {
     string output;
     while (key.length() < input.length()) { key += key; }
     for (int i = 0; i < input.length(); i++) {

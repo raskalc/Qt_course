@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\main\CLionProjects\Qt_course_dev
+CMAKE_SOURCE_DIR = C:\Users\main\CLionProjects\Qt_course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\main\CLionProjects\Qt_course\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Test.dir/depend.make
@@ -72,31 +72,31 @@ CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj: CMakeFiles/Test.dir/f
 CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj: CMakeFiles/Test.dir/includes_CXX.rsp
 CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj: Test_autogen/mocs_compilation.cpp
 CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj: CMakeFiles/Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.obj -c C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\Test_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Test_autogen\mocs_compilation.cpp
 
 CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.i"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\Test_autogen\mocs_compilation.cpp > CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Test_autogen\mocs_compilation.cpp > CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.s"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\Test_autogen\mocs_compilation.cpp -o CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Test_autogen\mocs_compilation.cpp -o CMakeFiles\Test.dir\Test_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/Test.dir/test.cpp.obj: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/test.cpp.obj: CMakeFiles/Test.dir/includes_CXX.rsp
 CMakeFiles/Test.dir/test.cpp.obj: ../test.cpp
 CMakeFiles/Test.dir/test.cpp.obj: CMakeFiles/Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/test.cpp.obj"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test.dir/test.cpp.obj -MF CMakeFiles\Test.dir\test.cpp.obj.d -o CMakeFiles\Test.dir\test.cpp.obj -c C:\Users\main\CLionProjects\Qt_course_dev\test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/test.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test.dir/test.cpp.obj -MF CMakeFiles\Test.dir\test.cpp.obj.d -o CMakeFiles\Test.dir\test.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\test.cpp
 
 CMakeFiles/Test.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/test.cpp.i"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course_dev\test.cpp > CMakeFiles\Test.dir\test.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\test.cpp > CMakeFiles\Test.dir\test.cpp.i
 
 CMakeFiles/Test.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/test.cpp.s"
-	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course_dev\test.cpp -o CMakeFiles\Test.dir\test.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\test.cpp -o CMakeFiles\Test.dir\test.cpp.s
 
 # Object files for target Test
 Test_OBJECTS = \
@@ -112,7 +112,7 @@ Test.exe: CMakeFiles/Test.dir/build.make
 Test.exe: CMakeFiles/Test.dir/linklibs.rsp
 Test.exe: CMakeFiles/Test.dir/objects1.rsp
 Test.exe: CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/Test.dir/clean:
 .PHONY : CMakeFiles/Test.dir/clean
 
 CMakeFiles/Test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\main\CLionProjects\Qt_course_dev C:\Users\main\CLionProjects\Qt_course_dev C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug C:\Users\main\CLionProjects\Qt_course_dev\cmake-build-debug\CMakeFiles\Test.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\main\CLionProjects\Qt_course C:\Users\main\CLionProjects\Qt_course C:\Users\main\CLionProjects\Qt_course\cmake-build-debug C:\Users\main\CLionProjects\Qt_course\cmake-build-debug C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles\Test.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Test.dir/depend
 

@@ -16,9 +16,11 @@ public:
 
 private slots:
     void onTextChanged_Enc();
-
+    static void change_mode();
 
 private:
     Ui::App *ui;
+
+
 };
 #endif // APP_H
