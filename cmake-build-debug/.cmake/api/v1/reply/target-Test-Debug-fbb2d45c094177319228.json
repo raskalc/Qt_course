@@ -41,7 +41,7 @@
 					"fragment" : "-g"
 				},
 				{
-					"fragment" : "-std=gnu++23"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
@@ -64,7 +64,7 @@
 				[
 					1
 				],
-				"standard" : "23"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[

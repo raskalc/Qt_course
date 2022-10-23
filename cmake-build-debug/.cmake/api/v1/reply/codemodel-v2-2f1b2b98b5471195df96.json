@@ -46,7 +46,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Qt-Debug-d49996740b97958e9666.json",
+					"jsonFile" : "target-Qt-Debug-10b460a41a7afc467afe.json",
 					"name" : "Qt",
 					"projectIndex" : 0
 				},
@@ -60,7 +60,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Test-Debug-b8b6659dc2e191ef3193.json",
+					"jsonFile" : "target-Test-Debug-fbb2d45c094177319228.json",
 					"name" : "Test",
 					"projectIndex" : 0
 				},
