@@ -29,7 +29,7 @@ namespace {
 struct qt_meta_stringdata_App_t {
     uint offsetsAndSizes[8];
     char stringdata0[4];
-    char stringdata1[18];
+    char stringdata1[12];
     char stringdata2[1];
     char stringdata3[12];
 };
@@ -38,14 +38,14 @@ struct qt_meta_stringdata_App_t {
 Q_CONSTINIT static const qt_meta_stringdata_App_t qt_meta_stringdata_App = {
     {
         QT_MOC_LITERAL(0, 3),  // "App"
-        QT_MOC_LITERAL(4, 17),  // "onTextChanged_Enc"
-        QT_MOC_LITERAL(22, 0),  // ""
-        QT_MOC_LITERAL(23, 11)   // "change_mode"
+        QT_MOC_LITERAL(4, 11),  // "change_mode"
+        QT_MOC_LITERAL(16, 0),  // ""
+        QT_MOC_LITERAL(17, 11)   // "update_text"
     },
     "App",
-    "onTextChanged_Enc",
+    "change_mode",
     "",
-    "change_mode"
+    "update_text"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -83,9 +83,9 @@ Q_CONSTINIT const QMetaObject App::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_App_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<App, std::true_type>,
-        // method 'onTextChanged_Enc'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'change_mode'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'update_text'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -97,8 +97,8 @@ void App::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         auto *_t = static_cast<App *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onTextChanged_Enc(); break;
-        case 1: _t->change_mode(); break;
+        case 0: _t->change_mode(); break;
+        case 1: _t->update_text(); break;
         default: ;
         }
     }

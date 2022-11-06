@@ -131,6 +131,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QLabel" name="mode_lbl">
+          <property name="text">
+           <string>Crypted mode</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer_4">
           <property name="orientation">
            <enum>Qt::Vertical</enum>

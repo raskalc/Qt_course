@@ -42,6 +42,7 @@ public:
     QTextEdit *Decrypted;
     QVBoxLayout *verticalLayout_3;
     QPushButton *switch_mode;
+    QLabel *mode_lbl;
     QSpacerItem *verticalSpacer_4;
     QComboBox *Selected_method;
     QSpacerItem *verticalSpacer_2;
@@ -126,6 +127,11 @@ public:
         switch_mode->setObjectName("switch_mode");
 
         verticalLayout_3->addWidget(switch_mode);
+
+        mode_lbl = new QLabel(MainWigdet);
+        mode_lbl->setObjectName("mode_lbl");
+
+        verticalLayout_3->addWidget(mode_lbl);
 
         verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
@@ -224,6 +230,7 @@ public:
         lbl1->setText(QCoreApplication::translate("App", "Encrypted", nullptr));
         lbl2->setText(QCoreApplication::translate("App", "Crypted", nullptr));
         switch_mode->setText(QCoreApplication::translate("App", "Switch Mode", nullptr));
+        mode_lbl->setText(QCoreApplication::translate("App", "Crypted mode", nullptr));
         Selected_method->setItemText(0, QCoreApplication::translate("App", "Vigenere", nullptr));
         Selected_method->setItemText(1, QCoreApplication::translate("App", "Atbash", nullptr));
         Selected_method->setItemText(2, QCoreApplication::translate("App", "Cesar", nullptr));

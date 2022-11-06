@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,60 +73,60 @@ CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj: CMakeFiles/Qt.dir/include
 CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj: Qt_autogen/mocs_compilation.cpp
 CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj: CMakeFiles/Qt.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp
 
 CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp > CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.i
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp > CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Qt.dir/Qt_autogen/mocs_compilation.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp -o CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.s
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\Qt_autogen\mocs_compilation.cpp -o CMakeFiles\Qt.dir\Qt_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/Qt.dir/Qt.cpp.obj: CMakeFiles/Qt.dir/flags.make
 CMakeFiles/Qt.dir/Qt.cpp.obj: CMakeFiles/Qt.dir/includes_CXX.rsp
 CMakeFiles/Qt.dir/Qt.cpp.obj: ../Qt.cpp
 CMakeFiles/Qt.dir/Qt.cpp.obj: CMakeFiles/Qt.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Qt.dir/Qt.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/Qt.cpp.obj -MF CMakeFiles\Qt.dir\Qt.cpp.obj.d -o CMakeFiles\Qt.dir\Qt.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\Qt.cpp
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/Qt.cpp.obj -MF CMakeFiles\Qt.dir\Qt.cpp.obj.d -o CMakeFiles\Qt.dir\Qt.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\Qt.cpp
 
 CMakeFiles/Qt.dir/Qt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Qt.dir/Qt.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\Qt.cpp > CMakeFiles\Qt.dir\Qt.cpp.i
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\Qt.cpp > CMakeFiles\Qt.dir\Qt.cpp.i
 
 CMakeFiles/Qt.dir/Qt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Qt.dir/Qt.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\Qt.cpp -o CMakeFiles\Qt.dir\Qt.cpp.s
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\Qt.cpp -o CMakeFiles\Qt.dir\Qt.cpp.s
 
 CMakeFiles/Qt.dir/app.cpp.obj: CMakeFiles/Qt.dir/flags.make
 CMakeFiles/Qt.dir/app.cpp.obj: CMakeFiles/Qt.dir/includes_CXX.rsp
 CMakeFiles/Qt.dir/app.cpp.obj: ../app.cpp
 CMakeFiles/Qt.dir/app.cpp.obj: CMakeFiles/Qt.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Qt.dir/app.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/app.cpp.obj -MF CMakeFiles\Qt.dir\app.cpp.obj.d -o CMakeFiles\Qt.dir\app.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\app.cpp
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/app.cpp.obj -MF CMakeFiles\Qt.dir\app.cpp.obj.d -o CMakeFiles\Qt.dir\app.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\app.cpp
 
 CMakeFiles/Qt.dir/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Qt.dir/app.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\app.cpp > CMakeFiles\Qt.dir\app.cpp.i
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\app.cpp > CMakeFiles\Qt.dir\app.cpp.i
 
 CMakeFiles/Qt.dir/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Qt.dir/app.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\app.cpp -o CMakeFiles\Qt.dir\app.cpp.s
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\app.cpp -o CMakeFiles\Qt.dir\app.cpp.s
 
 CMakeFiles/Qt.dir/widget.cpp.obj: CMakeFiles/Qt.dir/flags.make
 CMakeFiles/Qt.dir/widget.cpp.obj: CMakeFiles/Qt.dir/includes_CXX.rsp
 CMakeFiles/Qt.dir/widget.cpp.obj: ../widget.cpp
 CMakeFiles/Qt.dir/widget.cpp.obj: CMakeFiles/Qt.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Qt.dir/widget.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/widget.cpp.obj -MF CMakeFiles\Qt.dir\widget.cpp.obj.d -o CMakeFiles\Qt.dir\widget.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\widget.cpp
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Qt.dir/widget.cpp.obj -MF CMakeFiles\Qt.dir\widget.cpp.obj.d -o CMakeFiles\Qt.dir\widget.cpp.obj -c C:\Users\main\CLionProjects\Qt_course\widget.cpp
 
 CMakeFiles/Qt.dir/widget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Qt.dir/widget.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\widget.cpp > CMakeFiles\Qt.dir\widget.cpp.i
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\main\CLionProjects\Qt_course\widget.cpp > CMakeFiles\Qt.dir\widget.cpp.i
 
 CMakeFiles/Qt.dir/widget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Qt.dir/widget.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\widget.cpp -o CMakeFiles\Qt.dir\widget.cpp.s
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\main\CLionProjects\Qt_course\widget.cpp -o CMakeFiles\Qt.dir\widget.cpp.s
 
 # Object files for target Qt
 Qt_OBJECTS = \

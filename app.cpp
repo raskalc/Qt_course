@@ -6,6 +6,7 @@
 #include "QMessageBox"
 
 int mode = 0;
+
 using namespace std;
 
 void error(int err) {
@@ -23,10 +24,9 @@ void error(int err) {
 
 App::App(QWidget *parent) : QMainWindow(parent), ui(new Ui::App) {
     ui->setupUi(this);
-    int act;
-    connect(ui->Encrypted, SIGNAL(textChanged()), this, SLOT(onTextChanged_Enc()));
-    connect(ui->Selected_method, SIGNAL(currentIndexChanged(int)), this, SLOT(onTextChanged_Enc()));
-    connect(ui->Offset, SIGNAL(valueChanged(int)), this, SLOT(onTextChanged_Enc()));
+    connect(ui->Encrypted, SIGNAL(textChanged()), this, SLOT(update_text()));
+    connect(ui->Selected_method, SIGNAL(currentIndexChanged(int)), this, SLOT(update_text()));
+    connect(ui->Offset, SIGNAL(valueChanged(int)), this, SLOT(update_text()));
     connect(ui->switch_mode, SIGNAL(clicked()), this, SLOT(change_mode()));
 
     ui->Offset->hide();
@@ -37,63 +37,94 @@ App::~App() {
     delete ui;
 }
 
-void App::onTextChanged_Enc() {
+void App::update_text() {
     string input = ui->Encrypted->toPlainText().toStdString();
     string key;
-    switch (ui->Selected_method->currentIndex() + 10) {
-        case 0: {
-            ui->key->show();
-            ui->lbl2_2->show();
-            ui->Offset->hide();
-            ui->lbl3->hide();
-            key = ui->key->text().toStdString();
-            if (key.empty()) {
-                error(0);
+    if (mode == 0) {
+        switch (ui->Selected_method->currentIndex()) {
+            case 0: {
+                ui->key->show();
+                ui->lbl2_2->show();
+                ui->Offset->hide();
+                ui->lbl3->hide();
+                key = ui->key->text().toStdString();
+                if (key.empty()) {
+                    error(0);
+                    break;
+                }
+                string out = vigineer_crypt(input, key);
+                ui->Decrypted->setText(QString::fromUtf8(out));
                 break;
             }
-            string out = vigineer_crypt(input, key);
-            ui->Decrypted->setText(QString::fromUtf8(out));
-            break;
+            case 1: {
+                ui->key->hide();
+                ui->lbl3->hide();
+                ui->Offset->hide();
+                ui->lbl2_2->hide();
+                string out = atbash(input);
+                ui->Decrypted->setText(QString::fromUtf8(out));
+                break;
+            }
+            case 2: {
+                ui->lbl2_2->hide();
+                ui->key->hide();
+                ui->lbl3->show();
+                ui->Offset->show();
+                int offset = ui->Offset->value();
+                string out = cesar_crypt(input, offset);
+                ui->Decrypted->setText(QString::fromUtf8(out));
+                break;
+            }
         }
-        case 1: {
-            ui->key->hide();
-            ui->lbl3->hide();
-            ui->Offset->hide();
-            ui->lbl2_2->hide();
-            string out = atbash(input);
-            ui->Decrypted->setText(QString::fromUtf8(out));
-            break;
-        }
-        case 2: {
-            ui->lbl2_2->hide();
-            ui->key->hide();
-            ui->lbl3->show();
-            ui->Offset->show();
-            int offset = ui->Offset->value();
-            string out = cesar_crypt(input, offset);
-            ui->Decrypted->setText(QString::fromUtf8(out));
-            break;
-        }
-        case 10: {
-            break;
-        }
-        case 11: {
-            ui->key->hide();
-            ui->lbl3->hide();
-            ui->Offset->hide();
-            ui->lbl2_2->hide();
-            string out = atbash(input);
-            ui->Decrypted->setText(QString::fromUtf8(out));
-            break;
-        }
-        case 12: {
-            break;
+    } else {
+        switch (ui->Selected_method->currentIndex()) {
+            case 0: {
+                ui->key->show();
+                ui->lbl2_2->show();
+                ui->Offset->hide();
+                ui->lbl3->hide();
+                key = ui->key->text().toStdString();
+                if (key.empty()) {
+                    error(0);
+                    break;
+                }
+                string out = vigineer_decrypt(input, key);
+//                qDebug() << QString::fromUtf8(out);
+                ui->Decrypted->setText(QString::fromUtf8(out));
+                break;
+            }
+            case 1: {
+                ui->key->hide();
+                ui->lbl3->hide();
+                ui->Offset->hide();
+                ui->lbl2_2->hide();
+                string out = atbash(input);
+                ui->Decrypted->setText(QString::fromUtf8(out));
+                break;
+            }
+            case 2: {
+                ui->lbl2_2->hide();
+                ui->key->hide();
+                ui->lbl3->show();
+                ui->Offset->show();
+                int offset = ui->Offset->value();
+                string out = cesar_decrypt(input, offset);
+                ui->Decrypted->setText(QString::fromUtf8(out));
+                break;
+            }
         }
     }
 }
 
 void App::change_mode() {
-    if (mode == 0) { mode = 10; }
-    if (mode == 10) { mode = 0; }
-
+    if (mode == 0) {
+        mode = 1;
+        ui->mode_lbl->setText(QString::fromUtf8("Decryptor mode"));
+        App::update_text();
+    }
+    else if (mode == 1) {
+        mode = 0;
+        ui->mode_lbl->setText(QString::fromUtf8("Cryptor mode"));
+        App::update_text();
+    }
 }

@@ -15,8 +15,10 @@ public:
     ~App();
 
 private slots:
-    void onTextChanged_Enc();
-    static void change_mode();
+    void change_mode();
+
+    void update_text();
+
 
 private:
     Ui::App *ui;

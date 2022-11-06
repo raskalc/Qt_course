@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ include CMakeFiles/Test_autogen.dir/progress.make
 
 CMakeFiles/Test_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\main\CLionProjects\Qt_course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Test"
-	"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_autogen C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Test_autogen.dir/AutogenInfo.json Debug
+	C:\Users\main\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E cmake_autogen C:/Users/main/CLionProjects/Qt_course/cmake-build-debug/CMakeFiles/Test_autogen.dir/AutogenInfo.json Debug
 
 Test_autogen: CMakeFiles/Test_autogen
 Test_autogen: CMakeFiles/Test_autogen.dir/build.make
