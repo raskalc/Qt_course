@@ -1,20 +1,21 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.23)
 
 project(Qt VERSION 0.1 LANGUAGES CXX)
-
+include(ExternalProject)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+
+# standart cpp
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-
+########## Сурсы
 set(PROJECT_SOURCES
         Qt.cpp
         app.cpp
@@ -23,51 +24,47 @@ set(PROJECT_SOURCES
         widget.cpp
         widget.cpp
         )
+### jsoncpp add from github
+ExternalProject_Add(jsoncpp
+        GIT_REPOSITORY    https://github.com/open-source-parsers/jsoncpp.git
+        GIT_TAG           origin/master
+        LOG_DOWNLOAD      true
+        CMAKE_ARGS        "-DBUILD_STATIC_LIBS=ON -DBUILD_SHARED_LIBS=OFF -G 'Unix Makefiles'"
+        INSTALL_COMMAND   ""
+        )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(Qt
+
+
+ExternalProject_Get_property(jsoncpp INSTALL_DIR)
+
+
+######### Подключение Qt
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
+qt_add_executable(Qt
         MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET Qt APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
-else()
-    if(ANDROID)
-        add_library(Qt STATIC
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(Qt
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
+        ${PROJECT_SOURCES})
 
-target_link_libraries(Qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(Qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets )
 
 set_target_properties(Qt PROPERTIES
-    MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-    MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE TRUE
-)
-
+        WIN32_EXECUTABLE TRUE
+        )
 install(TARGETS Qt
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+        BUNDLE DESTINATION .
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(Qt)
-endif()
+qt_finalize_executable(Qt)
+target_link_libraries(Qt PUBLIC Qt${QT_VERSION_MAJOR}::Widgets -static)
 
+
+
+target_include_directories(Qt PRIVATE ${INSTALL_DIR}/src/jsoncpp/include)
+
+######### Тестовая конфигурация запуска
 set(PROJECT_SOURCES_test
         test.cpp)
-add_executable(Test
-        ${PROJECT_SOURCES_test}
-        )
 
+add_executable(Test
+        ${PROJECT_SOURCES_test})

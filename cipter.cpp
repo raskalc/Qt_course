@@ -1,42 +1,63 @@
-
 #include <string>
 
 using namespace std;
 
 string alph_en = "abcdefghijklmnopqrstuvwxyz";
 
-string cesar_crypt(string input, int offset) {
-    string output;
+string caesarCrypt(string input, int offset) {
+    string result = "";
     for (int i = 0; i < input.length(); i++) {
-        int num = (alph_en.find(input[i]) + offset);
-        if (num > alph_en.length()){num = num - alph_en.length();}
-        if (num < alph_en.length()){num = num + alph_en.length();}
-        if (num < alph_en.length() || num > alph_en.length()){output += "E";}
-        else{output = output + alph_en[num];}
-
+        if (input[i] == ' ') {
+            result += " ";
+        } else {
+            int amountCircles = (offset + alph_en.find(input[i])) / alph_en.length();
+            int index = alph_en.find((input[i] + offset - amountCircles * alph_en.length()));
+            result += alph_en[index];
+        }
     }
-    return output;
-}
-string cesar_decrypt(string input, int offset) {
-    string output;
-//    offset = offset  - 1
-    for (int i = 0; i < input.length(); i++) {
-        int num = (alph_en.find(input[i]) - offset );
-
-    }
-//    output = "Test";
-    return output;
+    return result;
 }
 
-string vigineer_crypt(string input, string key) {
-    string output;
-    while (key.length() < input.length()) { key += key; }
+string caesarDecrypt(string input, int offset) {
+    string result = "";
+    offset = alph_en.length() - offset;
+    while (offset < 0) { offset += alph_en.length(); }
     for (int i = 0; i < input.length(); i++) {
-        int element_number = alph_en.find(input[i]) + alph_en.find(key[i]);
-        if (element_number > alph_en.length()) { element_number = element_number - alph_en.length(); }
-        output += alph_en[element_number];
+        if (input[i] == ' ') {
+            result += " ";
+        } else {
+            int amountCircles = (offset + alph_en.find(input[i])) / alph_en.length();
+            int index = alph_en.find((input[i] + offset - amountCircles * alph_en.length()));
+            result += alph_en[index];
+        }
     }
-    return output;
+    return result;
+}
+
+string vigineer_crypt(string text, string key) {
+    string result = text;
+    int i = 0;
+    for (auto &c: result) {
+        if (c == ' ') {
+            result += ' ';
+        } else {
+            if (islower(c)) {
+                c = (((c - 'a') + (key[i++ % key.size()] - 'a')) % alph_en.length()) + 'a';
+            } else if (isupper(c)) {
+                c = (((c - 'A') + (key[i++ % key.size()] - 'A')) % alph_en.length()) + 'A';
+            }
+        }
+    }
+    return result;
+}
+
+string vigineer_decrypt(string str, string key) {
+    string k = key;
+    for (auto &c: k) {
+        c = tolower(c) - 'a' - 1;
+        c = 'z' - c;
+    }
+    return vigineer_crypt(str, k);
 }
 
 string atbash(string input) {
@@ -46,15 +67,5 @@ string atbash(string input) {
     }
     return output;
 }
-string vigineer_decrypt(string input, string key) {
-    string output;
-    while (key.length() < input.length()) { key += key; }
-    for (int i = 0; i < input.length(); i++) {
-        int element_number = alph_en.find(input[i]) - alph_en.find(key[i]);
 
-        if (element_number > alph_en.length()) { element_number = element_number + alph_en.length(); }
-        output += alph_en[element_number];
-    }
-    return output;
-}
 

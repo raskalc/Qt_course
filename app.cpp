@@ -71,7 +71,7 @@ void App::update_text() {
                 ui->lbl3->show();
                 ui->Offset->show();
                 int offset = ui->Offset->value();
-                string out = cesar_crypt(input, offset);
+                string out = caesarCrypt(input, offset);
                 ui->Decrypted->setText(QString::fromUtf8(out));
                 break;
             }
@@ -108,7 +108,7 @@ void App::update_text() {
                 ui->lbl3->show();
                 ui->Offset->show();
                 int offset = ui->Offset->value();
-                string out = cesar_decrypt(input, offset);
+                string out = caesarDecrypt(input, offset);
                 ui->Decrypted->setText(QString::fromUtf8(out));
                 break;
             }
